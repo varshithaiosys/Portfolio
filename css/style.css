@@ -1277,6 +1277,7 @@ section.client-logo.section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .client-logo.section .logo-flex .child {
@@ -1298,6 +1299,63 @@ section.client-logo.section {
 
 
 /*----- logo section ends here ------*/
+
+/*------ three column starts from here -----*/
+
+section.services-mod {
+    background: #0f161c;
+    padding: 80px 0px 50px;
+}
+
+.service-flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.service-flex-box .service-child {
+    flex-basis: 31.333%;
+    margin-bottom: 40px;
+}
+
+.service-flex-box .service-child:not(:nth-child(3n+3)) {
+    margin-right: 3%;
+}
+
+.service-flex-box .services-item {
+    background-color: #2e3849;
+    margin: 0;
+    transform: translateY(0);
+    transition: 0.4s;
+    border-radius: 5px 5px 5px 5px;
+    padding: 50px 40px 50px 40px;
+    cursor: pointer;
+}
+
+.service-flex-box .services-icon img {
+    height: 70px;
+    width: 70px;
+    max-width: unset;
+}
+
+.service-flex-box .services-icon {
+    margin-bottom: 20px;
+}
+
+.service-flex-box .service-child:hover .services-item {
+    transform: translateY(-10px);
+}
+
+.services-text h3 a {
+    font-size: inherit;
+    font-weight: inherit;
+    color: var(--light-green);
+}
+
+/*-----------three column ends here--------*/
+
 /*---------- footer starts from here -------*/
 
 .main-footer{

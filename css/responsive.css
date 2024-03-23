@@ -594,7 +594,7 @@ body:after {
     }
 
     .client-logo.section .logo-flex .child:not(:nth-child(2n+2)) {
-        margin-right: 8%;
+        margin-right: 8% !important;
     }
     .client-logo.section .logo-flex .child:not(:nth-child(4n+4)) {
         margin-right: 0;
