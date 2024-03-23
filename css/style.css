@@ -180,6 +180,10 @@ section.banner-mod {
     flex-basis: 47%;
 }
 
+section.common-banner .container {
+    max-width: 500px;
+}
+
 /*---- banner section ends here ------*/
 
 /*----- about section starts here ----*/
@@ -1166,6 +1170,7 @@ section.video-popup {
 
 .popup-box {
     display: flex;
+    position: relative;
 }
 
 .popup-right a {
@@ -1253,8 +1258,46 @@ content: "";
     z-index: -1;
 }
 
-/*---- popup video ends here-----*/
+.btn-text-box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 37px;
+}
 
+/*---- popup video ends here-----*/
+/*----- logo section starts from here ------*/
+
+section.client-logo.section {
+    padding: 80px 0px 40px;
+}
+
+.client-logo.section .logo-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-logo.section .logo-flex .child {
+    flex-basis: 22%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.client-logo.section .logo-flex .child:not(:nth-child(4n+4)) {
+    margin-right: 4%;
+}
+
+.client-logo.section .logo-flex .child img {
+    width: auto;
+    height: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/*----- logo section ends here ------*/
 /*---------- footer starts from here -------*/
 
 .main-footer{

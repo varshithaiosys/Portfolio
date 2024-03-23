@@ -155,32 +155,16 @@ $('.flex-boxes').slick({
 });
 /*----- Blog slider ends here ------*/
 
-/*---- magnific popup starts from here ----*/
+/*---- fancybox popup starts from here ----*/
 
-// $('.popups').magnificPopup({
-//   disableOn: 10,
-//   type: 'iframe',
-//   mainClass: 'mfp-fade',
-//   removalDelay: 160,
-//   preloader: false,
-//   fixedContentPos: false
-// });
-
-var popupvideos = $('.popups');
-if(popupvideos.length){
-    $('.popups').magnificPopup({
-        disableOn: 10,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false
-    }); 
-}
+$('.video-popup a.popups').fancybox({
+  caption : function( instance, item ) {
+    return $(this).parent().find('.btn-text').html();
+  }
+});;
 
 
-
-/*---- magnific popup ends here -----*/
+/*---- fancybox popup ends here -----*/
 
 /*----- footer backtotop starts here ------*/
 

@@ -10,12 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/circle-progress.js"></script>
+    <script type="text/javascript" src="js/easypiechart.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -24,7 +29,7 @@
             <div class="main-section">
                 <div class="col-left">
                     <a href="" class="logo">
-                        <img src="images/logo.png">
+                        <img src="images/logo.webp">
                     </a>
                 </div>
                 <div class="col-right">
@@ -55,19 +60,19 @@
                         <i class="fa-solid fa-circle-xmark"></i>
                     </div>
                     <ul class="nav-menu-items">
-                        <li class="menus-child active"><a href="" class="links">Home</a></li>
-                        <li class="menus-child"><a href="" class="links">About</a></li>
-                        <li class="menus-child"><a href="" class="links">projects</a></li>
-                        <li class="menus-child"><a href="" class="links">Journey</a></li>
-                        <li class="menus-child"><a href="" class="links">Blog</a></li>
-                        <li class="menus-child"><a href="" class="links">Contacts</a></li>
+                        <li class="menus-child active"><a href="index.html" class="links">Home</a></li>
+                        <li class="menus-child"><a href="about.html" class="links">About</a></li>
+                        <li class="menus-child"><a href="projects.html" class="links">projects</a></li>
+                        <li class="menus-child"><a href="journey.html" class="links">Journey</a></li>
+                        <li class="menus-child"><a href="blog.html" class="links">Blog</a></li>
+                        <li class="menus-child"><a href="contact.html" class="links">Contacts</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="common-banner" style="background-image: url(images/about-us-banner.jpg);">
+    <section class="common-banner" style="background-image: url(images/about-us-banner.webp);">
         <div class="overlay"></div>
         <div class="content-wrapper">
             <div class="container center-align">
@@ -76,7 +81,7 @@
                     <li class="breadcrumbs"><a href="">About Me</a></li>
                 </ul>
                 <h1>About Me</h1>
-                <p>Hire me, If you think my profile is suitable for the profile criteria and requirements</p>
+                <p>After careful consideration, I feel that my background and experience make me a strong candidate for this position and its designated title.</p>
             </div>
         </div>
     </section>
@@ -109,7 +114,7 @@
                         </div>
                     </div>
                     <div class="right-col center-align">
-                        <img src="images/manya.jpg">
+                        <img src="images/manya.webp">
                     </div>
                 </div>
             </div>
@@ -166,7 +171,7 @@
                 <div class="popup-flex">
                     <div class="popup-left">
                         <div class="img-bg">
-                            <img src="images/contact-one.jpg">
+                            <img src="images/contact-one.webp">
                         </div>
                     </div>
                     <div class="popup-right">
@@ -178,16 +183,54 @@
                        </div>
                        <div class="popup-box">
                          <div class="animate-box">
-                            <a href="https://www.youtube.com/watch?v=FMvA5fyZ338" title="YouTube video player" class="popups"><i class="fa-solid fa-play"></i></a>
-                         </div>
-                         <h5>See how We Work  </h5>
+                            <a class="fancy popups" data-fancybox href="https://www.youtube.com/watch?v=FMvA5fyZ338" data-width="640" data-height="360">
+                                <i class="fa-solid fa-play"></i>
+                                </a>
+                        </div>
+                        <div class="btn-text-box">
+                            <h5 class="btn-text">See how We Work  </h5>
+                           </div>
                        </div>
-                       <div></div>
+                    
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="client-logo section">
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="logo-flex">
+                    <div class="child">
+                        <img src="images/pw-logo-new.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/oort.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/hansen.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/cisco-logo-transparent.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/deltin88.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/k2-new-logo.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/atm.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/tez888.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer-section">
         <div class="main-footer">
             <div class="content-wrapper">
@@ -196,7 +239,7 @@
                         <div class="column one">
                             <div class="logo">
                                 <a href="">
-                                    <img src="images/logo.png">
+                                    <img src="images/logo.webp">
                                 </a>
                             </div>
                             <div class="content">
@@ -299,15 +342,6 @@
         </div>
     </footer>
 
-
-
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/circle-progress.js"></script>
-    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="js/easypiechart.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-   
 
 </body>
 
