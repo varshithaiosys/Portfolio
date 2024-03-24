@@ -163,8 +163,8 @@ $('.video-popup a.popups').fancybox({
   }
 });;
 
-
 /*---- fancybox popup ends here -----*/
+
 
 /*----- footer backtotop starts here ------*/
 
@@ -186,5 +186,3 @@ $('.video-popup a.popups').fancybox({
 /*----- footer backtotop ends here ------*/
 
 });
-
-

@@ -574,6 +574,24 @@ body:after {
     section.client-logo.section {
         padding: 40px 0px 18px;
     }
+
+    section.services-mod {
+        padding: 40px 0px 30px;
+    }
+
+    .pricing-plan .packages {
+        margin: 0;
+        padding: 10px;
+        margin-bottom: 20px !important;
+    }
+
+    section.pricing-plan {
+        padding: 40px 0px 40px;
+    }
+
+    .pricing-plan .top {
+        margin-bottom: 30px;
+    }
 }
 
 @media(min-width: 481px) and (max-width: 768px){
@@ -596,8 +614,60 @@ body:after {
     .client-logo.section .logo-flex .child:not(:nth-child(2n+2)) {
         margin-right: 8% !important;
     }
+
     .client-logo.section .logo-flex .child:not(:nth-child(4n+4)) {
         margin-right: 0;
+    }
+
+    .service-flex-box .service-child:not(:nth-child(3n+3)) {
+        margin-right: 0;
+    }
+
+    .service-flex-box .service-child {
+        flex-basis: 46.333%;
+        margin-bottom: 40px;
+    }
+
+    .service-flex-box .services-item{
+        padding: 20px;
+    }
+
+    .services-text h3.title {
+        font-size: var(--ultra-small-font);
+    }
+    
+    .services-desc p {
+        color: var(--small-font);
+    }
+
+    .service-flex-box .service-child {
+        flex-basis: 46.9%;
+        margin-bottom: 30px;
+    }
+
+    .service-flex-box .service-child:not(:nth-child(2n+2)) {
+        margin-right: 6%;
+    }
+
+    .testimonial-section .slick-next {
+        right: 3px;
+    }
+
+    .testimonial-section .slick-prev {
+        left: 40px;
+    }
+
+    .testimonial-section .slick-arrow{
+        width: 40px;
+        height: 40px;
+    }
+
+    .pricing-plan .packages:not(:nth-child(2n+2)) {
+        margin-right: 4%;
+    }
+
+    .pricing-plan .packages {
+        width: 48%;
     }
 
 }
@@ -644,5 +714,45 @@ body:after {
 
     .client-logo.section .logo-flex .child:not(:nth-child(4n+4)) {
         margin-right: 0;
+    }
+
+    .service-flex-box .services-item {
+        padding: 20px;
+    }
+
+    .service-flex-box .service-child:not(:nth-child(3n+3)) {
+        margin-right: 0;
+    }
+
+    .service-flex-box .service-child {
+        flex-basis: 100%;
+        margin-bottom: 25px;
+    }
+
+    .testimonial-section .slick-next {
+        right: 40px;
+    }
+
+    .testimonial-section .slick-prev {
+        left: 40px;
+    }
+
+    .testimonial-section .slick-arrow{
+        width: 30px;
+        height: 30px;
+    }
+
+    .testimonial-section .client-image img{
+        height: 95px;
+        width: 95px !important;
+    }
+
+    .testimonial-section .client-image{
+        margin-bottom: 0px;
+    }
+
+    .pricing-plan .packages {
+        width: 100%;
+
     }
 }
