@@ -165,6 +165,25 @@ $('.video-popup a.popups').fancybox({
 
 /*---- fancybox popup ends here -----*/
 
+/*----- isotope starts from here ------*/
+
+$('.isotope-section .filter-links:first-child').addClass('active');
+$(document).ready( function() {   
+
+  $('.grid-image-main').isotope({
+    itemSelector: '.grid-images',
+  });
+
+  // filter items on button click
+  $('.filter-button-group').on( 'click', 'div', function() {
+    var filterValue = $(this).attr('data-filter');
+    $('.grid-image-main').isotope({ filter: filterValue });
+    $('.filter-button-group div').removeClass('active');
+    $(this).addClass('active');
+  });
+})
+
+/*---- isotope ends here -----*/
 
 /*----- footer backtotop starts here ------*/
 
