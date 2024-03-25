@@ -1526,13 +1526,21 @@ section.pricing-plan {
 
 /*----- Isotope section starts here ------*/
 
+.isotope-section .mob-tabs {
+    display: none;
+}
 
 section.isotope-section {
     padding: 80px 0px 50px;
+    position: relative;
 }
 
 section.isotope-section .title-heading {
     max-width: 500px;
+}
+
+.isotope-section .container {
+    position: relative;
 }
 
 section.isotope-section .filter-link-main-grid {
@@ -1849,11 +1857,20 @@ a#back-top i {
 }
 li.footer-menu{
     position: relative;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
 }
 
 li.footer-menu:hover a {
     color: var(--primary-color);
+}
+
+li.footer-menu.active a {
+    color: var(--primary-color);
+}
+
+li.footer-menu.active:before {
+    width: 100%;
+    left: 0;
 }
 
 li.footer-menu:before {

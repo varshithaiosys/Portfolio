@@ -3,7 +3,6 @@ $(document).ready(function () {
   /*----- fixed header starts here -----*/
 
   window.onscroll = function () { scrollFunction() };
-
   function scrollFunction() {
     var header = document.getElementById("fixed-header");
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -12,12 +11,19 @@ $(document).ready(function () {
       header.classList.remove("fixed");
     }
   }
-  /*---- fixed haedaer ends here -----*/
+  /*---- fixed header ends here -----*/
+
+  /*---- nav bar starts from here -----*/
+  $('ul li.menus-child a, ul li.footer-menu a').click(function(){
+    $('li.menus-child a, li.footer-menu a').removeClass("active");
+    $(this).addClass("active");
+  });
+
+  /*---- nav bar ends here ------*/
 
   /*---- mobile header starts from here -------*/
 
   $(".bar, .close-btn ").click(function(){
-    // Toggle the body class
     $("body").toggleClass("menu-opened");
 });
 
@@ -48,10 +54,14 @@ $(document).ready(function () {
 
 /*----- counter starts here --------*/
 
-
 var a = 0;
 $(window).scroll(function() {
-  var oTop = $('#counters-mod').offset().top - window.innerHeight;
+  var countersMod = $('#counters-mod');
+  if (countersMod.length === 0) {
+    return; // Exit if the element is not found
+  }
+
+  var oTop = countersMod.offset().top - window.innerHeight;
   if (a == 0 && $(window).scrollTop() > oTop) {
     $('.counter-value').each(function() {
       var $this = $(this),
@@ -185,7 +195,30 @@ $(document).ready( function() {
 
 /*---- isotope ends here -----*/
 
-/*----- footer backtotop starts here ------*/
+/*---- isotope mobile view starts from here ---*/
+
+function dropdown() {
+  $('.mob-tabs').on('click',function(){
+    $('.dropdown-menu').slideToggle();
+  });
+
+  $('.filter-links').on('click',function(){
+    let targetText = $(this).find('p').text().toLowerCase();
+    $('.mob-tabs h5').html();
+    $('.mob-tabs h5').html(targetText);
+    $('.dropdown-menu').slideUp();
+
+  });
+}
+var win = $(window);
+function resizeHandler() {
+  dropdown();
+}
+win.resize(resizeHandler());
+
+/*---- isotope mobile view ends here -----*/
+
+  /*----- footer backtotop starts here ------*/
 
   var btn = $('#back-top');
   $(window).scroll(function () {
@@ -203,5 +236,6 @@ $(document).ready( function() {
 
 
 /*----- footer backtotop ends here ------*/
+
 
 });

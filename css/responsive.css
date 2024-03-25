@@ -1,3 +1,13 @@
+
+@media(min-width: 769px){
+    section.isotope-section .filter-link-main-grid {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        height: 100% !important;
+    }
+}
+
 @media(min-width: 1025px) and (max-width: 1140px){
     .contact-form .contact-forms .text-area{
         min-width: 500px;
@@ -126,6 +136,14 @@ section.about-two-column{
 .popup-left .img-bg:before{
     height: 100%;
 }
+
+.grid-image-main .grid-images {
+    width: 50%;
+}
+
+.filter-links{
+    padding: 8px 10px;
+ }
 }
 
 
@@ -591,6 +609,66 @@ body:after {
 
     .pricing-plan .top {
         margin-bottom: 30px;
+    }
+
+    .isotope-section .mob-tabs {
+        cursor: pointer;
+        display: block !important;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        border-radius: 20px;
+    background: var(--primary-color);
+    }
+
+    .isotope-section .mob-tabs i {
+        bottom: 0;
+        color: var(--light-green);
+        font-size: 16px;
+        height: 20px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 20px;
+    }
+
+    .filter-link-main-grid.filter-button-group.dropdown-menu {
+        background-color: #2e3849;
+        border-radius: 5px;
+        display: none;
+        max-width: 100%;
+        padding: 20px 0;
+        position: absolute;
+        top: 175px;
+        width: 100%;
+        z-index: 5;
+    }
+
+    .filter-links{
+        width: 100%;
+    }
+
+    .filter-links.active p{
+        position: relative;
+        left: unset;
+        right: unset;
+        top: unset;
+        bottom: unset;
+    }
+
+    .grid-image-main .grid-images {
+        width: 100%;
+    }
+
+    .isotope-section .mob-tabs h5 {
+        text-transform: uppercase;
     }
 }
 
