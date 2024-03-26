@@ -168,6 +168,23 @@ ul.timeline-flex li:nth-child(even) .elStoryColumn {
 ul.timeline-flex li:nth-child(odd) .elStoryColumn{
     left: 53px;
 }
+
+.main-flexes .flex-columns {
+    padding: 0px 10px;
+}
+
+.main-flexes .flex-columns .image-box img.hover-img{
+    width: 50px;
+    height: 50px;
+ }
+
+ .main-flexes .flex-columns .image-box img {
+    width: 50px;
+    height: 50px;
+ }
+ .personality-box {
+    padding: 20px;
+ }
 }
 
 
@@ -756,6 +773,20 @@ body:after {
 
     .elStoryColumn:before{
         left: -38px !important;
+    }
+
+    .main-flexes .flex-columns {
+        flex-basis: 100%;
+        padding: 0;
+        margin-bottom: 25px;
+    }
+    
+    .personality-box {
+        padding: 20px;
+    }
+
+    section.personal-section {
+        padding: 40px 0px 60px;
     }
 }
 

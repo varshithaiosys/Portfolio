@@ -283,6 +283,12 @@ thead th {
     vertical-align: bottom;
 }
 
+.section-bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .heading-divider {
     background-color: var(--primary-color);
     -webkit-border-radius: 30px;

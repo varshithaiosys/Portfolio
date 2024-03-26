@@ -829,9 +829,6 @@ section.contact-form {
 
 section.common-banner {
     position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     min-height: 350px;
     z-index: 1;
     width: 100%;
@@ -1862,6 +1859,10 @@ section.timeline-section {
     padding: 80px 0px;
 }
 
+.timeline-section .title-heading {
+    max-width: 400px;
+}
+
 .elStoryColumn {
     background: #01016f;
     position: relative;
@@ -1951,6 +1952,71 @@ ul.timeline-flex li:nth-child(even) .elStoryColumn:before {
     z-index: 11;
 }
 /*----- timeline ends here -----*/
+
+/*---- personality skills starts here ----*/
+
+section.personal-section {
+    padding: 80px 0px 60px;
+}
+
+section.personal-section .title-heading {
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.main-flexes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-flexes .flex-columns {
+    flex-basis: 33.333%;
+    padding: 0px 15px;
+    margin-bottom: 35px;
+}
+
+
+.main-flexes .flex-columns .image-box img {
+    width: 70px;
+    height: 70px;
+}
+
+.main-flexes .flex-columns .image-box {
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.personality-box {
+    padding: 50px 40px 50px 40px;
+    transition: all 500ms ease;
+    background: linear-gradient(278deg, #2a1454a6 0%, #8750f78a 100%);
+}
+
+.main-flexes .flex-columns .image-box img.hover-img {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .3s ease;
+}
+
+.personality-box:hover img.normal-img {
+    transform: scale(0);
+}
+
+.main-flexes .flex-columns .personality-box:hover .image-box img.hover-img{
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+/*---- personality skills ends here ----*/
 
 /*---------- footer starts from here -------*/
 
