@@ -1676,6 +1676,186 @@ section.isotope-section .filter-link-main-grid {
 
 /*---- Isostope section ends here ------*/
 
+/*---- products works starts from here -----*/
+
+section.products-section {
+    background: #0f161c;
+    padding: 80px 0px;
+}
+
+section.products-section .title-heading {
+    max-width: 500px;
+}
+
+/*---- products works ends here -----*/
+
+/*---- contact simple banner starts from here -----*/
+
+section.contact-simple-section {
+    background: #0f161c;
+    padding: 80px 0px;
+}
+
+section.contact-simple-section .contacts-flex-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.contact-simple-section .contacts-flex-boxes .left-columns {
+    flex-basis: 78%;
+}
+
+section.contact-simple-section .contacts-flex-boxes .right-columns {
+    flex-basis: 17%;
+    margin-left: 5%;
+}
+
+section.contact-simple-section .contacts-flex-boxes .left-columns .left-content {
+    max-width: 600px;
+}
+
+section.contact-simple-section .contacts-flex-boxes .left-columns .left-content h2 {
+    color: var(--white-color);
+}
+
+/*---- contact simple banner ends here ------*/
+
+/*---- project two column starts from here ----*/
+
+
+.business-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-flex .business-left {
+    flex-basis: 46%;
+    margin-right: 4%;
+}
+
+.business-flex .business-right {
+    flex-basis: 50%;
+}
+
+section.products-section .title-heading .section-heading {
+    margin-bottom: 30px;
+}
+
+.business-flex .business-right .tertiary-cta {
+    margin-top: 45px;
+}
+
+/*----- project two column ends here -----*/
+
+/*---- product websites starts from here -----*/
+
+section.product-websites {
+    padding: 80px 0px 50px;
+}
+
+section.product-websites .title-heading {
+    max-width: 525px;
+}
+
+section.product-websites .image-flexes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+section.product-websites .image-flexes .images-child-flex {
+    flex-basis: 33.3333%;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+}
+
+section.product-websites .image-content-box img {
+    transition: 1.3s all ease;
+}
+
+section.product-websites .image-content-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-layer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.portfolio-content {
+    position: absolute;
+    padding: 24px 30px;
+    opacity: 1;
+    z-index: 10;
+    top: 0;
+    border: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.portfolio-inner {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all .5s ease;
+    width: 100%;
+}
+
+.portfolio-inner h3.title {
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+
+.portfolio-inner span {
+    line-height: 26px;
+    font-weight: 600;
+    display: block;
+    flex: 0 0 100%;
+    transform: translateY(0px);
+}
+
+.portfolio-inner span a {
+    font-size: var(--extra-medium-font);
+}
+
+.portfolio-content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease 0s;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+}
+
+.main-layer:hover img {
+    transform: scale(1.2);
+}
+
+.main-layer:hover .portfolio-inner {
+    bottom: 50px;
+}
+
+/*--- product websites ends here -----*/
+
 /*---------- footer starts from here -------*/
 
 .main-footer{
@@ -1847,6 +2027,7 @@ a#back-top {
     box-shadow: -2px 1px 14px 0px rgba(206,20,70,1);
     opacity: 0;
     cursor: pointer;
+    z-index: 9;
 }
 
 a#back-top i {
