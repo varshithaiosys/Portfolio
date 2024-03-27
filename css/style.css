@@ -2018,6 +2018,364 @@ section.personal-section .title-heading {
 
 /*---- personality skills ends here ----*/
 
+/*---- team member starts from here ---*/
+
+section.team-member-section {
+    padding: 80px 0px;
+}
+
+section.team-member-section .title-heading {
+    margin-bottom: 60px;
+    max-width: 450px;
+}
+
+section.team-member-section .main-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.team-member-section .main-flex .team-child {
+    flex-basis: 33.333%;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+    display: none;
+    z-index: 0;
+}
+
+section.team-member-section .main-flex .team-child .team-img-sec {
+    position: relative;
+}
+
+.team-img-sec:before {
+    background: linear-gradient(to bottom, #ce1446 0, #000000 100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+section.team-member-section .main-flex .team-child img {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    height: 100%;
+    object-fit: cover;
+    min-height: 443px;
+}
+
+.team-content {
+    display: block;
+    z-index: 110;
+    color: #fff;
+    padding: 15px;
+    transition: 0.4s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.author-text {
+    position: absolute;
+    left: 30px;
+    top: 32px;
+    transition: 0.4s;
+}
+
+h3.team-name {
+    margin-bottom: 0;
+    font-size: 20px;
+    padding: 0 10px;
+    display: block;
+    top: -10px;
+    position: relative;
+    opacity: 0;
+    transition: all 0.45s cubic-bezier(0.23, 0.88, 0.34, 0.99);
+}
+
+span.team-title {
+    font-size: 14px;
+    padding: 3px 10px;
+    position: relative;
+    opacity: 0;
+    top: -15px;
+    transition: all 0.45s cubic-bezier(0.23, 0.88, 0.34, 0.99);
+}
+
+.team-content ul.social-icons {
+    position: absolute;
+    bottom: 45px;
+    right: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.team-content ul.social-icons li {
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.team-content ul.social-icons li.facebook {
+    bottom: -20px;
+}
+
+.team-content ul.social-icons li.google {
+    bottom: -20px;
+}
+
+.team-content ul.social-icons li.twitter {
+    bottom: -15px;
+}
+
+.team-item:hover .team-img-sec::before {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+.team-item:hover .author-text,
+.team-item:hover .social-icons{
+    opacity: 1;
+    visibility: visible;
+}
+
+.team-item:hover .author-text h3.team-name,
+.team-item:hover span.team-title{
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    transition-delay: .33s;
+}
+
+.team-content ul.social-icons li a.social-icon {
+    color: var(--light-green);
+    font-size: 18px;
+    display: block;
+    margin-left: 15px;
+}
+
+.team-item:hover .team-content ul.social-icons li {
+    bottom: 0;
+}
+
+.team-item:hover .author-text h3.team-name a {
+    font-size: var(--ultra-medium-font);
+    font-weight: 800;
+}
+
+span.team-title {
+    font-weight: 600;
+    color: var(--light-green);
+}
+
+.team-member-section .primary-cta {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/*---- team member ends here ----*/
+
+/*---- blog team member starts from here ----*/
+
+section.team-blog-section {
+    background: #0f161c;
+    padding: 80px 0px;
+}
+
+section.team-blog-section .title-heading {
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+
+section.team-blog-section .main-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.team-blog-section .blog-team {
+    flex-basis: 33.33%;
+    padding: 0px 15px;
+}
+
+.blog-item {
+    position: relative;
+    transition: all 500ms ease;
+    margin-top: 15px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.image-wrap {
+    position: relative;
+}
+
+.image-wrap:before {
+    opacity: .65;
+    background: #000;
+    content: "";
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.7s ease 0s;
+}
+
+section.team-blog-section .blog-team img {
+    display: block;
+    width: 100%;
+    transition: all 0.8s ease 0s;
+}
+
+section.team-blog-section .blog-team .blog-content {
+    margin-bottom: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background: transparent;
+    color: #fff;
+    box-shadow: none;
+    padding: 35px 24px 19px 42px;
+}
+
+.blog-btn.tertiary-cta:hover {
+    background-color: var(--light-green);
+    color: #fff;
+}
+
+.blog-btn.tertiary-cta:hover a {
+    color: var(--primary-color);
+}
+
+.category a {
+    color: #CCCCCC;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 12px;
+    font-size: 14px;
+    margin: 0;
+    display: block;
+}
+
+.blog-name a {
+    font-weight: inherit;
+    font-size: inherit;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.blog-btn {
+    margin: -50px 0 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.blog-item:hover {
+    transform: translateY(0px);
+}
+
+.blog-item:hover .image-wrap::before {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #ce1446);
+    opacity: .85;
+}
+
+section.team-blog-section .blog-item:hover .blog-team img {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    -moz-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    -o-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+    filter: grayscale(1);
+}
+
+.blog-item:hover .blog-btn {
+    margin: 32px 0 12px;
+    opacity: 1;
+}
+
+/*---- blog team member ends here ------*/
+
+/*---- faq section starts from here -----*/
+
+
+section.faq-section {
+    padding: 80px 0px;
+}
+
+.faq-section  .content-box:not(:first-child) .description-box {
+    display: none;
+}
+
+.faq-section .content-box {
+    background: linear-gradient(359deg, #2a1454 0%, #8750f778 100%);
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.faq-section .content-box:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.faq-section .question-box {
+    position: relative;
+    margin-left: 19px;
+}
+
+.faq-section .question-box .icon {
+    position: absolute;
+    width: 14px;
+    height: 7px;
+    font-size: 16px;
+    right: 100%;
+    bottom: 9px;
+    top: 3px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.faq-section .question-box i.fa-minus,
+.faq-section .question-box.active i.fa-plus {
+    display: none;
+}
+
+.faq-section .question-box.active i.fa-minus {
+    display: block;
+}
+
+.faq-section .question-box.active .icon {
+    top: 5px;
+}
+
+.faq-section .mains {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/*--- faq section ends here ------*/
+
 /*---------- footer starts from here -------*/
 
 .main-footer{

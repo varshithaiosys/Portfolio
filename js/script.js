@@ -247,6 +247,42 @@ window.dispatchEvent(new Event('scroll'));
 
 /*---- Timeline ends here ----*/
 
+/*----- load more button starts from here -----*/
+
+$(".team-child").slice(0, 6).show();
+$("body").on('click touchstart', '.load-more', function (e) {
+  e.preventDefault();
+  $(".team-child:hidden").slice(0, 3).slideDown();
+  if ($(".team-child:hidden").length == 0) {
+    $(".load-more").css('visibility', 'hidden');
+  }
+  $('html,body').animate({
+    scrollTop: $(this).offset().top
+  }, 1000);
+});
+
+/*---- load more button ends here ----*/
+
+/*---- faq starts from here ------*/
+
+$(".content-box:first .question-box").addClass('active');
+$(".content-box .question-box").on("click", function () {
+    if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this).siblings(".description-box").slideUp(200);
+        $(".content-box .question-box .icon i").removeClass("fa-minus").addClass("fa-plus");
+    } else {
+        $(".content-box .question-box .icon i").removeClass("fa-minus").addClass("fa-plus");
+        $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+        $(".content-box .question-box").removeClass("active");
+        $(this).addClass("active");
+        $(".description-box").slideUp(200);
+        $(this).siblings(".description-box").slideDown(200);
+    }
+});
+
+/*---- faq ends here -----*/
+
   /*----- footer backtotop starts here ------*/
 
   var btn = $('#back-top');
