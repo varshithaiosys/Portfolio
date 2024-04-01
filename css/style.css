@@ -848,7 +848,7 @@ section.common-banner .overlay {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgb(25 35 43 / 88%);
+    background-color: rgb(25 35 43 / 79%);
     z-index: -1;
 }
 
@@ -2028,6 +2028,10 @@ section.team-member-section {
     padding: 80px 0px;
 }
 
+section.common-banner.team-banner .overlay {
+    background-color: rgb(25 35 43 / 53%);
+}
+
 section.team-member-section .title-heading {
     margin-bottom: 60px;
     max-width: 450px;
@@ -2347,13 +2351,17 @@ section.faq-section {
 }
 
 .faq-section .question-box .icon {
+    position: relative;
+}
+
+.faq-section .question-box .icon i {
     position: absolute;
     width: 14px;
     height: 7px;
     font-size: 16px;
     right: 100%;
     bottom: 9px;
-    top: 3px;
+    top: -16px;
     transform: translate(-50%, -50%);
     cursor: pointer;
     color: var(--primary-color);
@@ -2366,6 +2374,7 @@ section.faq-section {
 
 .faq-section .question-box.active i.fa-minus {
     display: block;
+    top: -20px;
 }
 
 .faq-section .question-box.active .icon {
