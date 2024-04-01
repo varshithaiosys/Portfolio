@@ -449,5 +449,21 @@ img{
     h2 {
         font-size: var(--ultra-medium-font);
     }
+
+    h3 {
+        font-size: var(--extra-medium-font);
+    }
+
+    h4 {
+        font-size: var(--medium-font);
+    }
+
+    h5 {
+        font-size: var(--ultra-small-font);
+    }
+
+    p {
+        font-size: var(--small-font);
+    }
    
 }

@@ -185,6 +185,23 @@ ul.timeline-flex li:nth-child(odd) .elStoryColumn{
  .personality-box {
     padding: 20px;
  }
+
+ .family-check .detail-box{
+    left: 15px;
+ }
+
+ .family-check .personal-boxes {
+    padding: 24px 15px;
+ }
+
+ .family-check .flex-box .child-boxes img {
+    max-height: 287px;
+    min-height: 287px;
+ }
+
+ .family-check .flex-box .child-boxes {
+    padding: 0px 10px;
+}
 }
 
 
@@ -786,7 +803,30 @@ body:after {
     }
 
     section.personal-section {
-        padding: 40px 0px 60px;
+        padding: 40px 0px 40px;
+    }
+
+    .family-check .flex-box .child-boxes {
+        flex-basis: 100%;
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+
+    .family-check .detail-box {
+        bottom: 20px;
+        left: 25px;
+    }
+
+    section.family-check {
+        padding: 40px 0px;
+    }
+
+    .family-check .flex-box{
+        margin-top: 30px;
+    }
+
+    ul.timeline-flex {
+        margin-top: 30px;
     }
 }
 
