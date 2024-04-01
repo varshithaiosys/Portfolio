@@ -184,6 +184,10 @@ section.common-banner .container {
     max-width: 500px;
 }
 
+section.common-banner.journey-banner .overlay {
+    background-color: rgb(25 35 43 / 64%);
+}
+
 /*---- banner section ends here ------*/
 
 /*----- about section starts here ----*/

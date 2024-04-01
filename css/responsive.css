@@ -966,4 +966,11 @@ body:after {
     section.product-websites .image-flexes .images-child-flex {
         flex-basis: 100%;
     }
+
+    .about-section .main-bar .main-bar-box {
+        flex-basis: 37%;
+    }
+    .about-section .main-bar .counters {
+        flex-basis: 60%;
+    }
 }
