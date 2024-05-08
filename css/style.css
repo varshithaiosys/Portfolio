@@ -121,7 +121,7 @@ header.header-section li.menus-child a.links {
 
 .main-section .col-left img {
     width: 100%;
-    max-width: 125px;
+    max-width: 240px;
 }
 
 /*----- header ends here -----*/
@@ -2534,7 +2534,7 @@ section.blog-updates .blog-list-flex .blog-childs .bottom-content {
 }
 
 .footer-flex .column.one img {
-    width: 125px;
+    width: 200px;
 }
 
 .footer-flex .column.one .content {

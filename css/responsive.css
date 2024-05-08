@@ -214,6 +214,10 @@ ul.timeline-flex li:nth-child(odd) .elStoryColumn{
         max-width: 720px;
      }
 
+     .footer-flex .column.one img{
+        width: 150px;
+     }
+
     .main-section .col-right{
         display: none;
      }
