@@ -249,11 +249,11 @@ window.dispatchEvent(new Event('scroll'));
 
 /*----- load more button starts from here -----*/
 
-$(".team-child").slice(0, 6).show();
+$(".team-child , .blog-childs").slice(0, 6).show();
 $("body").on('click touchstart', '.load-more', function (e) {
   e.preventDefault();
-  $(".team-child:hidden").slice(0, 3).slideDown();
-  if ($(".team-child:hidden").length == 0) {
+  $(".team-child:hidden , .blog-childs:hidden").slice(0, 3).slideDown();
+  if ($(".team-child:hidden, .blog-childs:hidden").length == 0) {
     $(".load-more").css('visibility', 'hidden');
   }
   $('html,body').animate({

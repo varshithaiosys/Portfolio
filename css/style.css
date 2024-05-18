@@ -2497,10 +2497,19 @@ section.blog-updates .blog-list-flex .blog-childs {
     flex-basis: 33.33%;
     padding: 0px 12px;
     margin-bottom: 24px;
+    display: none;
 }
 
 section.blog-updates .blog-list-flex .blog-childs .bottom-content {
     background: #0f161c;
+}
+
+section.blog-updates .load-more {
+    width: 100%;
+    max-width: 170px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
 }
 
 /*---- blog ends here -----*/
