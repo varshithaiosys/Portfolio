@@ -65,11 +65,21 @@ body{
 }
 
 .main-section .col-right {
-    flex-basis: 60%;
+    flex-basis: 53%;
+    margin-right: 3%;
+}
+
+#setting-icon{
+    cursor: pointer;
+}
+
+.main-section .settings-col {
+    flex-basis: 2%;
 }
 
 header.header-section {
     padding: 30px 0px;
+    background-color: var(--secondary-color);
 }
 
 header.header-section li.menus-child {
@@ -130,6 +140,7 @@ header.header-section li.menus-child a.links {
 
 section.banner-mod {
     padding: 80px 0px;
+    background-color: var(--secondary-color);
 }
 
 .banner-mod .flex-box {
@@ -193,7 +204,7 @@ section.common-banner.journey-banner .overlay {
 /*----- about section starts here ----*/
 
 section.about-section {
-    background: #0f161c;
+    background: var(--section-bg-color);
     padding: 80px 0px;
 }
 
@@ -317,6 +328,7 @@ section.about-section {
 
 section.service-section {
     padding: 80px 0px 30px;
+    background-color: var(--secondray-color);
 }
 
 .service-container {
@@ -399,7 +411,7 @@ section.service-section {
 /*---- counter starts from here ----*/
 
 section.counter-section {
-    background: #0f161c;
+    background: var(--section-bg-color);
     padding: 80px 0px;
 }
 
@@ -468,6 +480,7 @@ section.counter-section h3.counter-value {
 
 section.testimonial-section {
     padding: 80px 0px;
+    background-color: var(--secondary-color);
 }
 
 .testi-slider {
@@ -549,7 +562,7 @@ section.testimonial-section {
 /*---- Blog section starts here ------*/
 
 section.blog-section {
-    background: #0f161c;
+    background: var(--section-bg-color);
     padding: 80px 0px;
 }
 
@@ -563,7 +576,7 @@ section.blog-section {
 .blog-flex .blog-left {
     width: 33%;
     margin-right: 2%;
-    background: #2e3849;
+    background: var(--blog-bg-color);
     padding: 60px;
     border-radius: 10px;
 }
@@ -579,7 +592,7 @@ section.blog-section {
 .blog-flex .blog-right .blog-childs {
     width: 100%;
     margin: 0px 15px;
-    background: #2e3849;
+    background: var(--blog-bg-color);
       border-radius: 10px;
 }
 
@@ -718,6 +731,7 @@ ul.blog-meta {
 
 section.contact-form {
     padding: 80px 0px;
+    background-color: var(--secondary-color);
 }
 
 .contact-forms {
@@ -764,7 +778,7 @@ section.contact-form {
     border-radius: 3px;
     outline: none;
     border: 2px solid var(--primary-color);
-    background: #2e3849;
+    background: var(--blog-bg-color);
     line-height: 25px;
     color: var(--white-color);
 }
@@ -782,7 +796,7 @@ section.contact-form {
 
 .contact-forms textarea {
     width: 100%;
-    background: #2e3849;
+    background: var(--blog-bg-color);
     border-radius: 3px;
     border: 2px solid var(--primary-color);
     min-height: 140px;
@@ -825,7 +839,7 @@ section.contact-form {
   border: 2px solid var(--primary-color);
   padding: 3px 10px;
   border-radius: 3px;
-  background: #2e3849;
+  background: var(--blog-bg-color);
 }
 
 /*----- contact form ends here----*/
@@ -883,7 +897,7 @@ section.common-banner ul li.breadcrumbs:not(:last-child):after {
 /*---- two column starts  here ------*/
 
 section.two-column-contact {
-    background: #0f161c;
+    background: var(--section-bg-color);
     padding: 80px 0px;
 }
 
@@ -896,7 +910,7 @@ section.two-column-contact .flexes {
 
 section.two-column-contact .flexes .col-left {
     flex-basis: 30%;
-    background: #2e3849;
+    background: var(--blog-bg-color);
     padding: 30px;
 }
 
@@ -940,7 +954,7 @@ section.two-column-contact .flexes .col-right iframe {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
-    background: #2e3849;
+    background: var(--blog-bg-color);
     margin-top: 40px;
 }
 
@@ -973,7 +987,7 @@ section.two-column-contact .flexes .col-right iframe {
 /*----- about me two column stats here -----*/
 
 section.about-two-column {
-    background: #0f161c;
+    background: var(--section-bg-color);
     padding: 80px 0px;
 }
 
@@ -1034,7 +1048,7 @@ section.about-two-column {
 
 .main-counter-item .counter-box {
     line-height: 1;
-    background: #0f161c;
+    background: var(--section-bg-color);
     position: absolute;
     right: -37px;
     top: 25px;
@@ -1144,7 +1158,7 @@ section.project-counters .counter-flex .counter-child .counter-up h5 {
 /*----- popup video starts from here ------*/
 
 section.video-popup {
-    background: #0f161c;
+    background: var(--section-bg-color);
     padding: 80px 0px;
 }
 
@@ -1305,7 +1319,7 @@ section.client-logo.section {
 /*------ three column starts from here -----*/
 
 section.services-mod {
-    background: #0f161c;
+    background: var(--section-bg-color);
     padding: 80px 0px 50px;
 }
 
@@ -1327,7 +1341,7 @@ section.services-mod {
 }
 
 .service-flex-box .services-item {
-    background-color: #2e3849;
+    background-color: var(--blog-bg-color);
     margin: 0;
     transform: translateY(0);
     transition: 0.4s;
@@ -1369,7 +1383,7 @@ section.pricing-plan {
     width: 350px;
     padding: 30px;
     height: 100%;
-    background-color: #2e3849;
+    background-color: var(--blog-bg-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1681,7 +1695,7 @@ section.isotope-section .filter-link-main-grid {
 /*---- products works starts from here -----*/
 
 section.products-section {
-    background: #0f161c;
+    background: var(--section-bg-color);
     padding: 80px 0px;
 }
 
@@ -1694,7 +1708,7 @@ section.products-section .title-heading {
 /*---- contact simple banner starts from here -----*/
 
 section.contact-simple-section {
-    background: #0f161c;
+    background: var(--section-bg-color);
     padding: 80px 0px;
 }
 
@@ -2202,7 +2216,7 @@ span.team-title {
 /*---- blog team member starts from here ----*/
 
 section.team-blog-section {
-    background: #0f161c;
+    background: var(--section-bg-color);
     padding: 80px 0px;
 }
 
@@ -2501,7 +2515,7 @@ section.blog-updates .blog-list-flex .blog-childs {
 }
 
 section.blog-updates .blog-list-flex .blog-childs .bottom-content {
-    background: #0f161c;
+    background: var(--section-bg-color);
 }
 
 section.blog-updates .load-more {
@@ -2628,6 +2642,7 @@ section.blog-updates .load-more {
     background: transparent;
     color: var(--primary-clor);
     font-size: 14px;
+    outline: none;
 }
 
 .footer-section input.submit-box {
@@ -2645,6 +2660,7 @@ section.blog-updates .load-more {
 
 .copy-right-footer {
     padding: 20px 0px;
+    background-color: var(--secondary-color);
 }
 
 .copy-right-footer .main-flexes {
@@ -2738,3 +2754,27 @@ li.footer-menu:hover:before{
 }
 
 /*---------- footer ends here -------*/
+
+/*----- light theme css starts from here -----*/
+
+body.light-theme header.header-section {
+    background: var(--dark-color);
+}
+
+body.light-theme .tertiary-cta {
+    -webkit-box-shadow: 0px 0px 10px 2px var(--light-green);
+    -moz-box-shadow: 0px 0px 10px 2px var(--light-green);
+    box-shadow: 0px 0px 10px 2px var(--light-green);
+}
+
+body.light-theme img#setting-icon {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(96%) saturate(0%) hue-rotate(40deg) brightness(96%) contrast(103%);
+}
+
+body.light-theme .testimonial-section .slick-arrow:hover {
+    -webkit-box-shadow: 0px 0px 15px 2px (--light-green);
+    -moz-box-shadow: 0px 0px 15px 2px var(--light-green);
+    box-shadow: 0px 0px 15px 2px var(--light-green);
+}
+
+/*---- light theme css ends here ----*/

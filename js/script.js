@@ -29,6 +29,19 @@ $(document).ready(function () {
 
   /*---- mobile header ends here -------*/
 
+  /*----- dark/light mode setting starts from here ----*/
+
+  var settingIcon = document.getElementById("setting-icon");
+  settingIcon.onclick = function(){
+    document.body.classList.toggle("light-theme");
+    if(document.body.classList.contains("light-theme")){
+      settingIcon.src="images/moon.webp";
+    }else{
+      settingIcon.src="images/sun.webp";
+    }
+  }
+  /*----- dark/light mode setting ends here -----*/
+
     /*----- progressive bar starts here -------*/
 
     let numberPercent = document.querySelectorAll('.counter-values')
@@ -302,5 +315,15 @@ $(".content-box .question-box").on("click", function () {
 
 /*----- footer backtotop ends here ------*/
 
+/*----- copyright auto update year starts from here -----*/
 
+var dteNow = new Date();
+var intYear = dteNow.getFullYear();
+
+$('#copyright').each(function() {
+    var text = $(this).text();
+    $(this).text(text.replace('CurrentCopyrightYear', intYear)); 
+});
+
+/*----- copyright auto update year ends here -----*/
 });

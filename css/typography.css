@@ -10,6 +10,7 @@
     --white-color: #ffffff;
     --dark-color: #000000;
     --section-bg-color: #0f161c;
+    --blog-bg-color: #2e3849;
     --gradient-one: linear-gradient(180deg, #f02653 0%, #e21218 100%);
     --extra-font: 64px;
     --large-font: 38px;
@@ -21,6 +22,20 @@
     --small-font: 14px;
     --primary-font: "Roboto Condensed", sans-serif;
 }
+
+.light-theme{
+    --primary-color: #da565c;
+    --secondary-color: #cedee2;
+    --tertiary-color: #262f3d;
+    --quaternary-color: #43558c;
+    --yellow-color: #8c2a0a;
+    --light-green: #334e77;
+    --white-color: #000;
+    --dark-color: #325394;
+    --section-bg-color: #e6eef1;
+    --blog-bg-color: #69868e;
+}
+
 
 * {
     box-sizing: border-box;
