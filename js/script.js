@@ -1,72 +1,78 @@
 $(document).ready(function () {
+  /*----- mobile header starts from here -----*/
 
-  /*----- fixed header starts here -----*/
+    const menuToggle = document.querySelector('.menu-toggle');
+const header = document.querySelector('.bottom-menu-header');
 
-  window.onscroll = function () { scrollFunction() };
-  function scrollFunction() {
-    var header = document.getElementById("fixed-header");
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      header.classList.add("fixed");
-    } else {
-      header.classList.remove("fixed");
-    }
-  }
-  /*---- fixed header ends here -----*/
+menuToggle.onclick = function(){
+  header.classList.toggle('active');
+}
 
-  /*---- nav bar starts from here -----*/
-  $('ul li.menus-child a, ul li.footer-menu a').click(function(){
-    $('li.menus-child a, li.footer-menu a').removeClass("active");
-    $(this).addClass("active");
-  });
+  /*----- mobile header ends here -----*/
+  /*----- banner slider starts here ---*/
 
-  /*---- nav bar ends here ------*/
+$(".school-sliders").slick({
+  dots: true,
+  arrows: false,
+  speed: 1200,
+  infinite: true,
+  autoplay: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+      { 
+        breakpoint: 991,
+         settings: { 
+          slidesToShow: 1, 
+          slidesToScroll: 1 
+        }},
+      { 
+        breakpoint: 768, 
+        settings: { 
+          slidesToShow: 1, 
+          slidesToScroll: 1
+        }},
+  ],
+});
+/*----- banner slider ends here ---*/
 
-  /*---- mobile header starts from here -------*/
+/*----- marquee starts from here ----*/
 
-  $(".bar, .close-btn ").click(function(){
-    $("body").toggleClass("menu-opened");
+var marquee_width = $(".marquee-content-primary").width();
+document.documentElement.style.setProperty('--marquee-padding', marquee_width + 'px');
+
+/*----- marqueee ends here ----*/
+
+/*----- testimonila starts from here ----*/
+
+
+$(".testimonial_slider_initial").slick({
+  dots: true,
+  arrows: false,
+  infinite: true,
+  autoplay: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  cssEase: "linear",
+  responsive: [
+      {
+         breakpoint: 992,
+         settings: { 
+          slidesToShow: 2, 
+          arrows: false,
+        }},
+      { 
+        breakpoint: 600, 
+        settings: { 
+          slidesToShow: 1, 
+          arrows: false,
+        }},
+  ],
 });
 
-  /*---- mobile header ends here -------*/
+/*----- testimonials ends here ----*/
 
-  /*----- dark/light mode setting starts from here ----*/
-
-  var settingIcon = document.getElementById("setting-icon");
-  settingIcon.onclick = function(){
-    document.body.classList.toggle("light-theme");
-    if(document.body.classList.contains("light-theme")){
-      settingIcon.src="images/moon.webp";
-    }else{
-      settingIcon.src="images/sun.webp";
-    }
-  }
-  /*----- dark/light mode setting ends here -----*/
-
-    /*----- progressive bar starts here -------*/
-
-    let numberPercent = document.querySelectorAll('.counter-values')
-    let getPercent = Array.from(numberPercent)
-
-    getPercent.map((items) => {
-        let startCount = 0
-        let progressBar = () => {
-            startCount++
-            items.innerHTML = `<p>${startCount}%</p>`
-            items.style.width = `${startCount}%`
-            if (startCount == items.dataset.count) {
-                clearInterval(stop)
-            }
-        }
-        let stop = setInterval(() => {
-            progressBar()
-        }, 40)
-    })
-
- /*----- progressive bar ends here -------*/
-
-
-/*----- counter starts here --------*/
-
+/*----- counter starts from here ---*/
 var a = 0;
 $(window).scroll(function() {
   var countersMod = $('#counters-mod');
@@ -95,61 +101,31 @@ $(window).scroll(function() {
         }
       });
     });
-    a = 1;
-    $(function() {
-      $('.chart').easyPieChart({
-        trackColor:"#ce1446",
-        scaleColor: "",
-        lineWidth: 5,
-        lineCap: 'round',
-        barColor: '#c9f31d',
-        size: 140,
-        animate: 2000
-      });
-    });
   }
 });
+/*----- counter ends here ---*/
 
-/*----- counter ends here --------*/
+/*----- progressive bar starts here -------*/
 
-/*----- testimonial slider starts here ------*/
+    let numberPercent = document.querySelectorAll('.counter-values')
+    let getPercent = Array.from(numberPercent)
 
-$(".testi-slider").slick( {
-  dots: false,
-  arrows: true,
-  speed:1200,
-  infinite: true,
-  autoplay: true,
-  slidesToShow:1,
-  slidesToScroll:1,
-  prevArrow:'<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-  nextArrow:'<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
-  responsive:[ {
-      breakpoint:1024,
-      settings: {
-          slidesToShow:1,
-          slidesToScroll:1
-      }
-  },
-  {
-      breakpoint:991,
-      settings: {
-          slidesToShow:1,
-          slidesToScroll:1
-      }
-  },
-  {
-      breakpoint:767,
-      settings: {
-          slidesToShow:1,
-          slidesToScroll:1
-      }
-  }
-  ]
-});
+    getPercent.map((items) => {
+        let startCount = 0
+        let progressBar = () => {
+            startCount++
+            items.innerHTML = `<p>${startCount}%</p>`
+            items.style.width = `${startCount}%`
+            if (startCount == items.dataset.count) {
+                clearInterval(stop)
+            }
+        }
+        let stop = setInterval(() => {
+            progressBar()
+        }, 40)
+    })
 
-
-/*------ testimonial slider ends here --------*/
+ /*----- progressive bar ends here -------*/
 
 /*------ Blog slider starts here -----*/
 
@@ -158,7 +134,7 @@ $('.flex-boxes').slick({
   arrows: false,
   autoplay: false,
   infinite: true, // Looping
-  slidesToShow: 2, // Show 2 slides at a time
+  slidesToShow: 3, // Show 2 slides at a time
   slidesToScroll: 1, // Scroll 1 slide at a time
   responsive: [
       {
@@ -177,16 +153,6 @@ $('.flex-boxes').slick({
   ]
 });
 /*----- Blog slider ends here ------*/
-
-/*---- fancybox popup starts from here ----*/
-
-$('.video-popup a.popups').fancybox({
-  caption : function( instance, item ) {
-    return $(this).parent().find('.btn-text').html();
-  }
-});;
-
-/*---- fancybox popup ends here -----*/
 
 /*----- isotope starts from here ------*/
 
@@ -231,70 +197,6 @@ win.resize(resizeHandler());
 
 /*---- isotope mobile view ends here -----*/
 
-/*---- Timeline starts from here ----*/
-
-var elements = document.querySelectorAll('.elStoryColumn');
-console.log("elements --- ", elements);
-// Function to check for fade effect on scroll and resize
-function checkForFade() {
-var windowHeight = window.innerHeight;
-elements.forEach(function (element) {
-    var elementHeight = element.offsetHeight;
-    var elementOffset = element.getBoundingClientRect().top;
-    var space = windowHeight - (elementHeight + elementOffset - window.pageYOffset);
-
-    if (space < 80) {
-    element.classList.add('non-focus');
-    } else {
-    element.classList.remove('non-focus');
-    }
-});
-}
-
-// Add event listeners for scroll and resize and call the checkForFade function
-window.addEventListener('scroll', checkForFade);
-window.addEventListener('resize', checkForFade);
-
-// Trigger the scroll event on initial load
-window.dispatchEvent(new Event('scroll'));
-
-/*---- Timeline ends here ----*/
-
-/*----- load more button starts from here -----*/
-
-$(".team-child , .blog-childs").slice(0, 6).show();
-$("body").on('click touchstart', '.load-more', function (e) {
-  e.preventDefault();
-  $(".team-child:hidden , .blog-childs:hidden").slice(0, 3).slideDown();
-  if ($(".team-child:hidden, .blog-childs:hidden").length == 0) {
-    $(".load-more").css('visibility', 'hidden');
-  }
-  $('html,body').animate({
-    scrollTop: $(this).offset().top
-  }, 1000);
-});
-
-/*---- load more button ends here ----*/
-
-/*---- faq starts from here ------*/
-
-$(".content-box:first .question-box").addClass('active');
-$(".content-box .question-box").on("click", function () {
-    if ($(this).hasClass("active")) {
-        $(this).removeClass("active");
-        $(this).siblings(".description-box").slideUp(200);
-        $(".content-box .question-box .icon i").removeClass("fa-minus").addClass("fa-plus");
-    } else {
-        $(".content-box .question-box .icon i").removeClass("fa-minus").addClass("fa-plus");
-        $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
-        $(".content-box .question-box").removeClass("active");
-        $(this).addClass("active");
-        $(".description-box").slideUp(200);
-        $(this).siblings(".description-box").slideDown(200);
-    }
-});
-
-/*---- faq ends here -----*/
 
   /*----- footer backtotop starts here ------*/
 
@@ -326,4 +228,5 @@ $('#copyright').each(function() {
 });
 
 /*----- copyright auto update year ends here -----*/
+
 });
