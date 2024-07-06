@@ -4,68 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | School</title>
+    <title>Contact Us | portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/isotope-data-filter.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/isotope_cdn.min.js"></script>
+    <script type="text/javascript" src="js/isotope.min.js"></script>
+    <script type="text/javascript" src="js/circle-progress.js"></script>
+    <script type="text/javascript" src="js/easypiechart.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
     <header class="header-section" id="fixed-header">
-        <div class="top-menu-header">
-            <div class="content-wrapper">
-                <div class="top-header">
-                    <div class="col-left">
-                        <ul>
-                            <li><span> <i class="fa-solid fa-location-dot"></i> 20th Main Road, JP Nagar, India</span>
-                            </li>
-                            <li><i class="fa-solid fa-phone"></i><a href="tel:+919635000098"> +91 9635000098 </a></li>
-                            <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@example.com"> info@example.com
-                                </a></li>
-                        </ul>
-                    </div>
-                    <div class="col-right">
-                        <ul>
-                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
+        <div class="content-wrapper">
+            <div class="main-section">
+                <div class="col-left">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.webp">
+                    </a>
                 </div>
-            </div>
-        </div>
-        <div class="bottom-menu-header">
-            <div class="content-wrapper">
-                <div class="bottom-header">
-                    <a href="" class="logo"><img src="images/Logo_Aviatora.png"></a>
-                    <div class="menu-toggle"></div>
+                <div class="col-right">
                     <ul class="menu-items">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html" class="active">About Us</a></li>
-                        <li><a href="#">Eduaction <i class="fa-solid fa-angle-down"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="#">English Medium</a></li>
-                                <li><a href="#">Kannada Medium</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Facilties</a></li>
-                        <li><a href="#">Result</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li class="menus-child"><a href="index.html" class="links">Home</a></li>
+                        <li class="menus-child"><a href="about.html" class="links">About</a></li>
+                        <li class="menus-child"><a href="projects.html" class="links">projects</a></li>
+                        <li class="menus-child"><a href="journey.html" class="links">Journey</a></li>
+                        <li class="menus-child"><a href="blog.html" class="links">Blog</a></li>
+                        <li class="menus-child active"><a href="contact.html" class="links">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="settings-col">
+                    <img src="images/sun.webp"  id="setting-icon">
+                </div>
+                 
+                <div class="mobile-menu">
+                    <div class="bar" id="bar">
+                        <span class="dot1"></span>
+                        <span class="dot2"></span>
+                        <span class="dot3"></span>
+                        <span class="dot4"></span>
+                        <span class="dot5"></span>
+                        <span class="dot6"></span>
+                        <span class="dot7"></span>
+                        <span class="dot8"></span>
+                        <span class="dot9"></span>
+                    </div>
+                    <div class="close-btn">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <ul class="nav-menu-items">
+                        <li class="menus-child"><a href="index.html" class="links">Home</a></li>
+                        <li class="menus-child"><a href="about.html" class="links">About</a></li>
+                        <li class="menus-child"><a href="projects.html" class="links">projects</a></li>
+                        <li class="menus-child"><a href="journey.html" class="links">Journey</a></li>
+                        <li class="menus-child"><a href="team.html" class="links">Team</a></li>
+                        <li class="menus-child"><a href="services.html" class="links">Sevices</a></li>
+                        <li class="menus-child"><a href="blog.html" class="links">Blog</a></li>
+                        <li class="menus-child active"><a href="contact.html" class="links">Contacts</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
 
-
-    <section class="common-banner section-bg" style="background-image: url(images/contact-us-banner.jpg);">
+    <section class="common-banner section-bg" style="background-image: url(images/contact-us-bg.webp);">
         <div class="overlay"></div>
         <div class="content-wrapper">
             <div class="container center-align">
@@ -74,65 +89,138 @@
                     <li class="breadcrumbs"><a href="">Contact Us</a></li>
                 </ul>
                 <h1>Contact Us</h1>
-                <p>After careful consideration, I feel that my background and experience make me a strong candidate for this position and its designated title.</p>
+                <p>Hire me, If you think my profile is suitable for the profile criteria and requirements</p>
             </div>
         </div>
     </section>
 
-    <section class="contact-details">
+    <section class="two-column-contact">
         <div class="content-wrapper">
-            <div class="contact-flex">
-                <div class="contact-child">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <h3>Phone</h3>
-                    <p>A wonderful serenity has taken possession of my entire soul, like these.</p>
-                    <a href="tel: +91 9743014933" class="cell-no">
-                        +91 9743014933
-                    </a>
-                </div>
-                <div class="contact-child">
-                    <i class="fa-regular fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>A wonderful serenity has taken possession of my entire soul, like these.</p>
-                    <a href="mailto:varshabgowda2016@gmail.com" class="mail-ids">
-                        varshabgowda2016@gmail.com
-                    </a>
-                </div>
-                <div class="contact-child">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h3>Location</h3>
-                    <p>4 apt. Flawing Street. The Grand Avenue.
-                        Liverpool, UK 33342</p>
-                    <a href="#" class="cell-no">
-                        View On Google Map
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="container">
+                <div class="flexes">
+                    <div class="col-left">
+                       <div class="contact-info-box">
+                            <h2>Contact Info</h2>
+                            <div class="heading-divider"></div>
 
-    <section class="location-section">
-        <div class="iframes-box">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.1134161117166!2d77.56793002484011!3d12.90042803740845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ffcaf1d5637%3A0xfe7515248165e4f5!2sYelachenahalli%2C%20Bengaluru%2C%20Karnataka%20560078!5e0!3m2!1sen!2sin!4v1710840569034!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-
-
-    <section class="contact-two-column">
-        <div class="content-wrapper">
-            <div class="flex-content">
-                <div class="left-cols">
-                   <div class="content-boxes">
-                        <h5>Stay With Us</h5>
-                        <h2>The Path To Success Starts With Education</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet massa turpis sit proin metus volutpat.</p>
-                   </div>
-                    <div class="primary-cta">
-                        <a href="">Read more</a>
+                            <div class="content-boxes">
+                                <p>Objectively innovate your empowered manufactured products whereas parallel platforms for your ideas.</p>
+                            </div>
+                            <div class="address-box">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="detail-box">
+                                    <p>No 21, 3rd cross, Behind old Ashrama road, Near Anjaneya Temple, Yelchenahalli,
+                                        Bangalore - 560078 </p>
+                                </div>
+                            </div>
+                            <div class="phone-box">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div class="detail-box">
+                                    <a href="tel: +91 9743014933">
+                                        +91 9743014933
+                                    </a>
+                                    <a href="tel: +91 9743014933">
+                                        +91 9743014933
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mail-box">
+                                <div class="icon-box">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div class="detail-box">
+                                    <a href="mailto:varshabgowda2016@gmail.com">
+                                        varshabgowda2016@gmail.com
+                                    </a>
+                                    <a href="mailto:varshabgowda2016@gmail.com">
+                                        varshabgowda299@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.1134161117166!2d77.56793002484011!3d12.90042803740845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ffcaf1d5637%3A0xfe7515248165e4f5!2sYelachenahalli%2C%20Bengaluru%2C%20Karnataka%20560078!5e0!3m2!1sen!2sin!4v1710840569034!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="right-cols">
-                    <img src="images/school.jpg">
+            </div>
+        </div>
+   </section>
+
+    <section class="contact-form">
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="title-heading center-align">
+                    <h5>Let's Talk</h5>
+                    <div class="heading-divider"></div>
+                    <div class="section-heading">
+                        <h2>Quick Contact</h2>
+                    </div>
+                </div>
+
+                <div class="contact-flexes">
+                    <div class="left-image-box">
+                    <img src="images/contact-two.webp">
+                    </div>
+
+                    <div class="contact-forms">
+                        <div class="section-heading center-align">
+                            <h4>Let's Interact With each Other </h4>
+                            <div class="heading-divider"></div>
+                        </div>
+                        
+                        <div class="contact-boxes">
+                            <div class="name-box">
+                            <input type="text" name="Name">
+                            <label>Name</label>
+                            </div>
+                            <div class="email-box">
+                                <input type="email"  name="email">
+                                <label>Email</label>
+                            </div>
+                        </div>
+                        <div class="contact-boxes">
+                            <div class="mobile-number">
+                                <input type="tel" name="phone number">
+                                <label>Phone Number</label>
+                            </div>
+                            <div class="website-box">
+                                <input type="text" name="website">
+                                <label>Website</label>
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <textarea name="message"></textarea>
+                            <label>Message</label>
+                        </div>
+                        <div class="submit-now">
+                            <input type="submit" vlaue="submit Now" class="primary-cta all-text-white fw-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-simple-section">
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="contacts-flex-boxes">
+                    <div class="left-columns">
+                       <div class="left-content">
+                            <h5>Let's Talk</h5>
+                            <div class="heading-divider"></div>
+                            <h2>Wanna Grow Your Business and Build Your Strong Marketing Skills.,</h2>
+                      </div>
+                    </div>
+                    <div class="right-columns primary-cta">
+                        <a href="">Get started</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,8 +235,8 @@
                     <div class="footer-flex">
                         <div class="column one">
                             <div class="logo">
-                                <a href='/'>
-                                    <img src="images/Logo_Aviatora.png">
+                                <a href="index.html">
+                                    <img src="images/logo.webp">
                                 </a>
                             </div>
                             <div class="content">
@@ -158,27 +246,18 @@
                             </div>
                             <div class="social-media">
                                 <ul>
-                                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href=""> <i class="fa-brands fa-square-whatsapp"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+
+
                                 </ul>
                             </div>
                         </div>
                         <div class="column two">
                             <div class="footer-title">
-                                <h2>Quick Links</h2>
-                                <div class="heading-divider"></div>
-                            </div>
-                            <ul>
-                                <li class="footer-menu active"><a href='index.html'>Home</a></li>
-                                <li class="footer-menu"><a href='/services'>Service</a></li>
-                                <li class="footer-menu"><a href='/team'>Team</a></li>
-                                <li class="footer-menu"><a href='/contact'>Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="column three">
-                            <div class="footer-title">
-                                <h2>Contact info</h2>
+                                <h3>Contact info</h3>
                                 <div class="heading-divider"></div>
                             </div>
                             <div class="address-box">
@@ -219,6 +298,21 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="column three">
+                            <div class="footer-title">
+                                <h3>Newsletter</h3>
+                                <div class="heading-divider"></div>
+                            </div>
+                            <div class="news-content">
+                                <p>We denounce with righteous and in and dislike men who are so beguiled and demo
+                                    realized.</p>
+                                <div class="input-box">
+                                    <input type="email" class="mail-box" name="EMAIL" placeholder="Your email address"
+                                        required="">
+                                    <input type="submit" class="submit-box primary-cta fw-6 all-text-white" value="Send">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -226,8 +320,16 @@
         <div class="copy-right-footer">
             <div class="content-wrapper">
                 <div class="main-flexes">
-                    <div class="col-left" id="copyright">
+                    <div class="col-left">
                         <p>© 2024 All Rights Reserved. Developed By <a href="">Varshitha M B</a></p>
+                    </div>
+                    <div class="col-right">
+                        <ul>
+                            <li class="footer-menu"><a href="index.html">Home</a></li>
+                            <li class="footer-menu"><a href="services.html">Service</a></li>
+                            <li class="footer-menu"><a href="team.html">Team</a></li>
+                            <li class="footer-menu active"><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
                     <a class="backtotopbtn" id="back-top">
                         <i class="fa-solid fa-angles-up"></i>
@@ -237,12 +339,6 @@
         </div>
     </footer>
 
-
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/isotope_cdn.min.js"></script>
-    <script type="text/javascript" src="js/isotope.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

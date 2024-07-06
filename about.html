@@ -4,68 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | School</title>
+    <title>About Me | portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/isotope-data-filter.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/isotope_cdn.min.js"></script>
+    <script type="text/javascript" src="js/isotope.min.js"></script>
+    <script type="text/javascript" src="js/circle-progress.js"></script>
+    <script type="text/javascript" src="js/easypiechart.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
     <header class="header-section" id="fixed-header">
-        <div class="top-menu-header">
-            <div class="content-wrapper">
-                <div class="top-header">
-                    <div class="col-left">
-                        <ul>
-                            <li><span> <i class="fa-solid fa-location-dot"></i> 20th Main Road, JP Nagar, India</span>
-                            </li>
-                            <li><i class="fa-solid fa-phone"></i><a href="tel:+919635000098"> +91 9635000098 </a></li>
-                            <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@example.com"> info@example.com
-                                </a></li>
-                        </ul>
-                    </div>
-                    <div class="col-right">
-                        <ul>
-                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
+        <div class="content-wrapper">
+            <div class="main-section">
+                <div class="col-left">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.webp">
+                    </a>
                 </div>
-            </div>
-        </div>
-        <div class="bottom-menu-header">
-            <div class="content-wrapper">
-                <div class="bottom-header">
-                    <a href="" class="logo"><img src="images/Logo_Aviatora.png"></a>
-                    <div class="menu-toggle"></div>
+                <div class="col-right">
                     <ul class="menu-items">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html" class="active">About Us</a></li>
-                        <li><a href="#">Eduaction <i class="fa-solid fa-angle-down"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="#">English Medium</a></li>
-                                <li><a href="#">Kannada Medium</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Facilties</a></li>
-                        <li><a href="#">Result</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li class="menus-child"><a href="index.html" class="links">Home</a></li>
+                        <li class="menus-child active"><a href="about.html" class="links">About</a></li>
+                        <li class="menus-child"><a href="projects.html" class="links">projects</a></li>
+                        <li class="menus-child"><a href="journey.html" class="links">Journey</a></li>
+                        <li class="menus-child"><a href="blog.html" class="links">Blog</a></li>
+                        <li class="menus-child"><a href="contact.html" class="links">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="settings-col">
+                    <img src="images/sun.webp"  id="setting-icon">
+                </div>
+                 
+                <div class="mobile-menu">
+                    <div class="bar" id="bar">
+                        <span class="dot1"></span>
+                        <span class="dot2"></span>
+                        <span class="dot3"></span>
+                        <span class="dot4"></span>
+                        <span class="dot5"></span>
+                        <span class="dot6"></span>
+                        <span class="dot7"></span>
+                        <span class="dot8"></span>
+                        <span class="dot9"></span>
+                    </div>
+                    <div class="close-btn">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <ul class="nav-menu-items">
+                        <li class="menus-child"><a href="index.html" class="links">Home</a></li>
+                        <li class="menus-child active"><a href="about.html" class="links">About</a></li>
+                        <li class="menus-child"><a href="projects.html" class="links">projects</a></li>
+                        <li class="menus-child"><a href="journey.html" class="links">Journey</a></li>
+                        <li class="menus-child"><a href="team.html" class="links">Team</a></li>
+                        <li class="menus-child"><a href="services.html" class="links">Sevices</a></li>
+                        <li class="menus-child"><a href="blog.html" class="links">Blog</a></li>
+                        <li class="menus-child"><a href="contact.html" class="links">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
 
-
-    <section class="common-banner section-bg about-mod" style="background-image: url(images/about-us-banner.webp);">
+    <section class="common-banner section-bg" style="background-image: url(images/about-us-banner.webp);">
         <div class="overlay"></div>
         <div class="content-wrapper">
             <div class="container center-align">
@@ -73,8 +88,43 @@
                     <li class="breadcrumbs"><a href="">Home</a></li>
                     <li class="breadcrumbs"><a href="">About Me</a></li>
                 </ul>
-                <h1>About Us</h1>
+                <h1>About Me</h1>
                 <p>After careful consideration, I feel that my background and experience make me a strong candidate for this position and its designated title.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-two-column" id="counters-mod">
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="about-flex">
+                    <div class="left-col">
+                        <div class="common-haeding">
+                            <h5>My Working Experience</h5>
+                            <div class="heading-divider"></div>
+                            <div class="section-heading">
+                                <h2>I have worked on International projects</h2>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <h5>we have good connection between International Projects for static websites, dynamic websites and product websites.</h5>
+                        </div>
+                        <p>This lorem ipsum generator is made for all the designers, designers, webmasters and others who need lorem ipsum. Generator is made the way that everyone can use it, but especially for awesome digital projects going to use a passage of lorem Ipsum.</p>
+                        <div class="experiemce-counter">
+                                <div class="main-counter-item">     
+                                    <div class="counter-box">
+                                      <h2 class="counter"><span class="counter-value" data-count="2">0</span> + </h2>              
+                                    </div>
+                                </div>
+                                <div class="experiemce-text">
+                                    <h5>Years <br>Working<br> Experiance</h5>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="right-col center-align">
+                        <img src="images/manya.webp">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -156,43 +206,43 @@
         </div>
     </section>
 
-
-    <section class="about-two-column" id="counters-mod">
+    <section class="client-logo section">
         <div class="content-wrapper">
             <div class="container">
-                <div class="about-flex">
-                    <div class="left-col">
-                        <div class="common-haeding">
-                            <h5>My Working Experience</h5>
-                            <div class="heading-divider"></div>
-                            <div class="section-heading">
-                                <h2>I have worked on International projects</h2>
-                            </div>
-                        </div>
-                        <div class="content-box">
-                            <h5>we have good connection between International Projects for static websites, dynamic websites and product websites.</h5>
-                        </div>
-                        <p>This lorem ipsum generator is made for all the designers, designers, webmasters and others who need lorem ipsum. Generator is made the way that everyone can use it, but especially for awesome digital projects going to use a passage of lorem Ipsum.</p>
-                        <div class="experiemce-counter">
-                                <div class="main-counter-item">     
-                                    <div class="counter-box">
-                                      <h2 class="counter"><span class="counter-value" data-count="2">0</span> + </h2>              
-                                    </div>
-                                </div>
-                                <div class="experiemce-text">
-                                    <h5>Years <br>Working<br> Experiance</h5>
-                                </div>
-                        </div>
+                <div class="title-heading center-align">
+                <h5>Business partner</h5>
+                <div class="heading-divider"></div>
+                <h2>My Projects</h2>
+            </div>
+                <div class="logo-flex">
+                    <div class="child">
+                        <img src="images/pw-logo-new.webp">
                     </div>
-                    <div class="right-col center-align">
-                        <img src="images/manya.webp">
+                    <div class="child">
+                        <img src="images/oort.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/hansen.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/cisco-logo-transparent.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/deltin88.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/k2-new-logo.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/atm.webp">
+                    </div>
+                    <div class="child">
+                        <img src="images/tez888.webp">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
 
     <footer class="footer-section">
         <div class="main-footer">
@@ -201,8 +251,8 @@
                     <div class="footer-flex">
                         <div class="column one">
                             <div class="logo">
-                                <a href='/'>
-                                    <img src="images/Logo_Aviatora.png">
+                                <a href="index.html">
+                                    <img src="images/logo.webp">
                                 </a>
                             </div>
                             <div class="content">
@@ -212,27 +262,18 @@
                             </div>
                             <div class="social-media">
                                 <ul>
-                                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href=""> <i class="fa-brands fa-square-whatsapp"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+
+
                                 </ul>
                             </div>
                         </div>
                         <div class="column two">
                             <div class="footer-title">
-                                <h2>Quick Links</h2>
-                                <div class="heading-divider"></div>
-                            </div>
-                            <ul>
-                                <li class="footer-menu active"><a href='/'>Home</a></li>
-                                <li class="footer-menu"><a href='/services'>Service</a></li>
-                                <li class="footer-menu"><a href='/team'>Team</a></li>
-                                <li class="footer-menu"><a href='/contact'>Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="column three">
-                            <div class="footer-title">
-                                <h2>Contact info</h2>
+                                <h3>Contact info</h3>
                                 <div class="heading-divider"></div>
                             </div>
                             <div class="address-box">
@@ -273,6 +314,21 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="column three">
+                            <div class="footer-title">
+                                <h3>Newsletter</h3>
+                                <div class="heading-divider"></div>
+                            </div>
+                            <div class="news-content">
+                                <p>We denounce with righteous and in and dislike men who are so beguiled and demo
+                                    realized.</p>
+                                <div class="input-box">
+                                    <input type="email" class="mail-box" name="EMAIL" placeholder="Your email address"
+                                        required="">
+                                    <input type="submit" class="submit-box primary-cta fw-6 all-text-white" value="Send">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -281,7 +337,15 @@
             <div class="content-wrapper">
                 <div class="main-flexes">
                     <div class="col-left" id="copyright">
-                        <p>© 2024 All Rights Reserved. Developed By <a href="">Varshitha M B</a></p>
+                        <p>©  CurrentCopyrightYear All Rights Reserved. Developed By <a href="">Varshitha M B</a></p>
+                    </div>
+                    <div class="col-right">
+                        <ul>
+                            <li class="footer-menu"><a href="index.html">Home</a></li>
+                            <li class="footer-menu"><a href="services.html">Service</a></li>
+                            <li class="footer-menu"><a href="team.html">Team</a></li>
+                            <li class="footer-menu"><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
                     <a class="backtotopbtn" id="back-top">
                         <i class="fa-solid fa-angles-up"></i>
@@ -292,11 +356,6 @@
     </footer>
 
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/isotope_cdn.min.js"></script>
-    <script type="text/javascript" src="js/isotope.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
