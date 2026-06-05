@@ -31,15 +31,42 @@ $(document).ready(function () {
 
   /*----- dark/light mode setting starts from here ----*/
 
-  var settingIcon = document.getElementById("setting-icon");
-  settingIcon.onclick = function(){
+  // var settingIcon = document.getElementById("setting-icon");
+  // settingIcon.onclick = function(){
+  //   document.body.classList.toggle("light-theme");
+  //   if(document.body.classList.contains("light-theme")){
+  //     settingIcon.src="images/moon.webp";
+  //   }else{
+  //     settingIcon.src="images/sun.webp";
+  //   }
+  // }
+
+
+  const settingIcon = document.getElementById("setting-icon");
+
+// Check saved theme when page loads
+let savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
+    document.body.classList.add("light-theme");
+    settingIcon.src = "images/moon.webp";
+} else {
+    document.body.classList.remove("light-theme");
+    settingIcon.src = "images/sun.webp";
+}
+
+// Toggle theme on click
+settingIcon.onclick = function () {
     document.body.classList.toggle("light-theme");
-    if(document.body.classList.contains("light-theme")){
-      settingIcon.src="images/moon.webp";
-    }else{
-      settingIcon.src="images/sun.webp";
+
+    if (document.body.classList.contains("light-theme")) {
+        settingIcon.src = "images/moon.webp";
+        localStorage.setItem("theme", "light");
+    } else {
+        settingIcon.src = "images/sun.webp";
+        localStorage.setItem("theme", "dark");
     }
-  }
+};
   /*----- dark/light mode setting ends here -----*/
 
     /*----- progressive bar starts here -------*/
