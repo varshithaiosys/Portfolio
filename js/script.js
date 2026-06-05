@@ -31,15 +31,6 @@ $(document).ready(function () {
 
   /*----- dark/light mode setting starts from here ----*/
 
-  // var settingIcon = document.getElementById("setting-icon");
-  // settingIcon.onclick = function(){
-  //   document.body.classList.toggle("light-theme");
-  //   if(document.body.classList.contains("light-theme")){
-  //     settingIcon.src="images/moon.webp";
-  //   }else{
-  //     settingIcon.src="images/sun.webp";
-  //   }
-  // }
 
 
   const settingIcon = document.getElementById("setting-icon");
@@ -49,10 +40,10 @@ let savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "light") {
     document.body.classList.add("light-theme");
-    settingIcon.src = "images/moon.webp";
+    settingIcon.src = "images/sun.webp";
 } else {
     document.body.classList.remove("light-theme");
-    settingIcon.src = "images/sun.webp";
+    settingIcon.src = "images/moon.webp";
 }
 
 // Toggle theme on click
