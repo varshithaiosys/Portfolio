@@ -40,10 +40,10 @@ let savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "light") {
     document.body.classList.add("light-theme");
-    settingIcon.src = "images/sun.webp";
+    settingIcon.src = "images/moon.webp";
 } else {
     document.body.classList.remove("light-theme");
-    settingIcon.src = "images/moon.webp";
+    settingIcon.src = "images/sun.webp";
 }
 
 // Toggle theme on click
